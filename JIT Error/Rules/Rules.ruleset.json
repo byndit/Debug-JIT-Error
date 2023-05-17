@@ -1,0 +1,321 @@
+{
+    "name": "Custom rules",
+    "description": "Disable unwanted rules from the Cops and specify Warnings before Release.",
+    "rules": 
+    [
+        {
+            "id": "AA0139",
+            "action": "Error",
+            "justification": "Possible Overflow."
+        },        
+        {
+            "id": "AA0205",
+            "action": "Error",
+            "justification": "Variables must be initialized before usage."
+        },
+        {
+            "id": "AA0202",
+            "action": "Error",
+            "justification": "The name of the local variable is identical to a field, method or action in the same scope."
+        },
+        {
+            "id": "AA0175",
+            "action": "Error",
+            "justification": "Only find or get record if you need to access the values. Consider using ISEMPTY."
+        },      
+        {
+            "id": "AA0231",
+            "action": "Error",
+            "justification": "Do not use the StrSubstNo or string concatenation as a parameter in the Error method."
+        }, 
+        {
+            "id": "AA0005",
+            "action": "Error",
+            "justification": "Only use BEGIN..END to encolse compount statements."
+        },
+        {
+            "id": "AA0181",
+            "action": "Error",
+            "justification": "The FindSet() or Find() method on the record must be used only in connection with the Next() method."
+        },
+        {
+            "id": "AA0008",
+            "action": "Error",
+            "justification": "Open and Close Parenthesis."
+        },
+        {
+            "id": "AW0011",
+            "action": "Error",
+            "justification": "Add PromotedOnly=true to some or all promoted actions to avoid identical actions from appearing in both the promoted and default sections of the command bar."
+        },
+        {
+            "id": "AW0008",
+            "action": "Error",
+            "justification": "The Web client does not support displaying Repeater controls in pages of type Card, Document, and ListPlus."
+        },
+        {
+            "id": "AA0137",
+            "action": "Error",
+            "justification": "Variable is unused."
+        },
+        {
+            "id": "AW0005",
+            "action": "Error",
+            "justification": "Action with name should have a value for the Image property."
+        },
+        {
+            "id": "AA0022",
+            "action": "Error",
+            "justification": "Substitute the IF THEN ELSE structure with a CASE."
+        },
+        {
+            "id": "AA0214",
+            "action": "Error",
+            "justification": "The record should be modified before saving to the database."
+        },
+        {
+            "id": "AA0206",
+            "action": "Error",
+            "justification": "The variable is initialized but not used."
+        },           
+        {
+            "id": "AA0224",
+            "action": "Error",
+            "justification": "The count of option captions specified in the OptionCaption property for XYZ is wrong."
+        },
+        {
+            "id": "AA0218",
+            "action": "Error",
+            "justification": "The Tooltip property for must be filled."
+        },        
+        {
+            "id": "AL0604",
+            "action": "Error",
+            "justification": "Use of implicit 'with' will be removed in the future. Qualify with 'Rec.'"
+        },
+        {
+            "id": "AA0131",
+            "action": "Error",
+            "justification": "The number of parameters passed to a string must match the placeholders."
+        },
+        {
+            "id": "AA0001",
+            "action": "Error",
+            "justification": "There must be exactly one space character on each side of '+'"
+        },
+        {
+            "id": "AA0021",
+            "action": "Error",
+            "justification": "Variable declarations should be ordered by type."
+        },
+        {
+            "id": "AA0448",
+            "action": "Error",
+            "justification": "Use FieldCaption instead of FieldName and TableCaption instead of TableName in methods that display messages."
+        },
+        {
+            "id": "AA0194",
+            "action": "Error",
+            "justification": "Remember to specify either the 'OnAction' trigger or 'RunObject' property on an action."
+        },        
+        {
+            "id": "AA0207",
+            "action": "Error",
+            "justification": "The EventSubscriber method xxx must be local."
+        },
+        {
+            "id": "AS0062",
+            "action": "Error",
+            "justification": "Missing Application Area!"
+        },
+        {
+            "id": "AA0005",
+            "action": "Error",
+            "justification": "Only use BEGIN..END to enclose compound statements."
+        },
+        {
+            "id": "AA0228",
+            "action": "Error",
+            "justification": "The local method XXX is declared but never used."
+        },      
+        {
+            "id": "AA0221",
+            "action": "Error",
+            "justification": "You must specify a OptionCaption property for all fields which source expressions is not a table field."
+        },
+        {
+            "id": "AA0136",
+            "action": "Error",
+            "justification": "Unreachable code detected."
+        },        
+        {
+            "id": "AA0198",
+            "action": "Error",
+            "justification": "The name of the local variable is identical to a global variable."
+        },  
+        {
+            "id": "AA0233",
+            "action": "Error",
+            "justification": "The 'FindFirst' method on the record must be used without the Next() method."
+        },         {
+            "id": "AA0225",
+            "action": "Error",
+            "justification": "The Caption property for PageField must be filled in."
+        }, 
+        {
+            "id": "AA0237",
+            "action": "Error",
+            "justification": "The name of non temporary variables must not be prefixed with Temp"
+        },  
+        {
+            "id": "AA0073",
+            "action": "Error",
+            "justification": "The name of temporary variable 'CustomerTemp' must be prefixed with Temp."
+        }, 
+        {
+            "id": "AA0217",
+            "action": "Error",
+            "justification": "Use a text constant or label for format string in StrSubstNo."
+        },  
+        {
+            "id": "AA0244",
+            "action": "Error",
+            "justification": "Do not use identical names for parameters and global variables."
+        },  
+        {
+            "id": "AA0245",
+            "action": "Error",
+            "justification": "To avoid confusion, do not give parameters the same name as fields, methods, or actions in the same scope."
+        }, 
+        {
+            "id": "AA0100",
+            "action": "Warning",
+            "justification": "Do not have identifiers with quotes in the name. - should be an error after obsolete field deletion."
+        },         
+        {
+            "id": "AA0215",
+            "action": "Hidden",
+            "justification": "Incorrect File Name Warning; OPPDemoStarter.Codeunit.al instead of Codeunit 5157989  - OPP Demo Starter.al. Benamung der Dateien bewusst aktuell nicht; Ids sind f�r uns noch wichtig."
+        },
+        {
+            "id": "AA0470",
+            "action": "Hidden",
+            "justification": "Placeholders should have a comment explaining their content. Die Platzhalter sollten aktuell nicht unsererseits beschrieben werden."
+        },        
+        {
+            "id": "AA0074",
+            "action": "Hidden",
+            "justification": "Variable must have a suffix from this list: Msg, Tok, Err, Qst, Lbl, Txt. Zigtausende Meldungen und dann XLIFF Anpassungen etc."
+        },        
+        {
+            "id": "AA0072",
+            "action": "Hidden",
+            "justification": "Incorrect Variable Names; OPPTriggerMgt instead of OPPTriggerManagement. Wollen wir erst einmal nicht wieder umbenennen."
+        },        
+        {
+            "id": "AL0432",
+            "action": "Hidden",
+            "justification": "Functions Marked for removal; Wenn es removed ist, gibt es einen Fehler in der Pipeline!"
+        },        
+        {
+            "id": "AA0204",
+            "action": "Hidden",
+            "justification": "The name of the global variable is identical to a field, method or action in the same scope. / Erst einmal deaktiviert, aber auf dem Schirm lassen!"
+        },        
+        {
+            "id": "AW0006",
+            "action": "Hidden",
+            "justification": "Object should use the UsageCategory and ApplicationArea properties. Wollen wir bewusst nicht!!!"
+        },        
+        {
+            "id": "AA0150",
+            "action": "Hidden",
+            "justification": "Parameter is declared by reference but never changed in method. Wenn man Parameter �ndert, dann w�re das ein Breaking Change."
+        },        
+        {
+            "id": "AA0210",
+            "action": "Hidden",
+            "justification": "The table does not contain a key with the field Unapplied. Wir k�nnen die Schl�ssel gar nicht anlegen leider."
+        }, 
+        {
+            "id": "AL0254",
+            "action": "Hidden",
+            "justification": "Should be part of the keys for table 'Cust. Ledger Entry. Wir k�nnen die Schl�ssel gar nicht anlegen leider."
+        },                
+        {
+            "id": "AL0719",
+            "action": "Hidden",
+            "justification": "The argument should be a valid Field type. Argument of type Joker or Variant might have underlying type that is not valid Field type. Variants sind bewusst so dann genutzt."
+        },        
+        {
+            "id": "AA0232",
+            "action": "Hidden",
+            "justification": "The FlowField XXX of XXX should be added to the SIFT key. Das funktioniert leider nicht nach Abstimmung in der Schulung."
+        },        
+        {
+            "id": "AL0603",
+            "action": "Hidden",
+            "justification": "An implicit conversion is being performed from a value of type Enum. Das w�re ein kompletter Rebuild von Ratenzahlung."
+        },        
+        {
+            "id": "AL0655",
+            "action": "Hidden",
+            "justification": "The property DataItemLinkReference can only refer to an ancestor DataItem. Ist ein einziger Report und sollte erst mal so bleiben."
+        },        
+        {
+            "id": "AA0240",
+            "action": "Hidden",
+            "justification": "The Label 'Text123' must not contain email addresses or phone numbers. We use it for websites."
+        },        
+        {
+            "id": "AS0029",
+            "action": "Hidden",
+            "justification": "[Evergreen] Removing a page is allowed for partners."
+        },
+        {
+            "id": "AS0030",
+            "action": "Hidden",
+            "justification": "[Evergreen] Renaming a page is allowed for partners."
+        },
+        {
+            "id": "AS0031",
+            "action": "Hidden",
+            "justification": "[Evergreen] Removing an action is allowed for partners."
+        },
+        {
+            "id": "AS0032",
+            "action": "Hidden",
+            "justification": "[Evergreen] Removing a control is allowed for partners."
+        },
+        {
+            "id": "AS0033",
+            "action": "Hidden",
+            "justification": "[Evergreen] Removing a view is allowed for partners."
+        },
+        {
+            "id": "AS0051",
+            "action": "Hidden",
+            "justification": "[Temporary] Remove required property validation as it was a known exception."
+        },
+        {
+            "id": "AS0050",
+            "action": "Hidden",
+            "justification": "[Temporary] Allow changing the extensibility of enums."
+        },
+        {
+            "id": "AS0064",
+            "action": "Hidden",
+            "justification": "[Temporary] Allow removing interfaces from codeunit."
+        },
+        {
+            "id": "AS0066",
+            "action": "Hidden",
+            "justification": "[Temporary] Allow adding procedures to interfaces."
+        },
+        {
+            "id": "AS0089",
+            "action": "Hidden",
+            "justification": "[Temporary] Allow removing page customizations, profiles, and control add-ins."
+        }
+    ]    
+}

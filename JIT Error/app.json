@@ -1,31 +1,31 @@
 {
-  "id": "9ac34d8a-dc1e-4938-8a72-54883c84677a",
+  "id": "c7ce6c08-c373-41d2-ab6a-5bd2c477c78c",
   "name": "JIT Error",
   "publisher": "JIT Error",
-  "version": "1.0.0.0",
-  "brief": "",
-  "description": "",
-  "privacyStatement": "",
-  "EULA": "",
-  "help": "",
-  "url": "",
-  "logo": "",
-  "dependencies": [],
+  "brief": "JIT Error",
+  "description": "Just a JIT Test",
+  "version": "1.0.0.0", 
+  "privacyStatement": "https://www.bing.com",
+  "EULA": "https://www.bing.com",
+  "help": "https://www.bing.com",
+  "url": "https://www.bing.com",
+  "logo": "Logo.png",
+  "platform": "22.0.0.0", 
+  "application": "22.0.0.0", 
+  "dependencies": [
+  ],
+  "idRanges": [{"from": 62000,"to": 62010}],
   "screenshots": [],
-  "platform": "1.0.0.0",
-  "application": "22.0.0.0",
-  "idRanges": [
-    {
-      "from": 62000,
-      "to": 62010
-    }
-  ],
+  "runtime": "11.0", 
   "features": [
-    "NoImplicitWith"
+    "TranslationFile",
+    "NoImplicitWith",
+    "NoPromotedActionProperties"    
   ],
+  "target":"Cloud",
   "resourceExposurePolicy": {
     "allowDebugging": true,
-    "allowDownloadingSource": false,
-    "includeSourceInSymbolFile": false
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
   }
 }
